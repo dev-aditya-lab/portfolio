@@ -141,7 +141,7 @@ box-shadow: 0 0 1rem var(--main-color);
 }
 
 .btn{
-    display:iline-block;
+    display:inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
@@ -151,6 +151,7 @@ box-shadow: 0 0 1rem var(--main-color);
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    cursor:pointer
 }
 
 .btn:hover{
@@ -176,6 +177,31 @@ box-shadow:none;
     font-size: 4.5rem;
 }
 
+
+/* ==========updated============ */
+
+#check0{
+    display:none;
+}
+#check0:checked ~ .content{
+    display: block;
+}
+
+#check0:checked ~ label{
+    visibility: hidden;
+}
+#check0:checked ~ label:after
+{
+    content: 'Read Less';
+    display:block;
+    visibility: visible;
+}
+
+
+
+
+
+/* ==============updated========== */
 .about-content h2{
     text-align: left;
     line-height: 1.2;
@@ -189,10 +215,68 @@ box-shadow:none;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+/* =======updated======= */
+#check{
+    display:none;
+}
 
+.content{
+    display:none;
+    transition: 0.5s linear;
+}
+
+#check:checked ~ .content{
+    display: block;
+}
+
+#check:checked ~ label{
+    visibility: hidden;
+}
+#check:checked ~ label:after
+{
+    content: 'Read Less';
+    display:block;
+    visibility: visible;
+}
+
+#check1{
+    display:none;
+}
+#check1:checked ~ .content{
+    display: block;
+}
+
+#check1:checked ~ label{
+    visibility: hidden;
+}
+#check1:checked ~ label:after
+{
+    content: 'Read Less';
+    display:block;
+    visibility: visible;
+}
+
+#check2{
+    display:none;
+}
+#check2:checked ~ .content{
+    display: block;
+}
+
+#check2:checked ~ label{
+    visibility: hidden;
+}
+#check2:checked ~ label:after
+{
+    content: 'Read Less';
+    display:block;
+    visibility: visible;
+}
+/* =========updated======== */
 .services h2{
     margin-bottom: 5rem;
 }
+
 
 .services-container{ 
     display:flex;

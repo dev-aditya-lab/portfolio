@@ -2,18 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="shortcut icon" href="pic/small.png" type="image/x-icon">
     <title>Document</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="pic/small.png" type="image/x-icon">
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="logo">portfolio</a>
+      <a href="#" class="logo">portfolio</a>
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
@@ -47,7 +47,7 @@
       <div class="about-img">
         <img src="pic/new.png" alt="" />
       </div>
-      <div class="about-content">
+      <!-- <div class="about-content">
         <h2 class="heading">About<span>Me</span></h2>
         <h3>Software Developer!</h3>
         <p>
@@ -56,12 +56,31 @@
           voluptas vero repellat?
         </p>
         <a href="#" class="btn">Read More</a>
+      </div> -->
+
+
+
+      <div class="about-content">
+        <input type="checkbox" id="check0">
+        <h2 class="heading">About<span>Me</span></h2>
+        <h3>Software Developer!</h3>
+        <p>"Hello! I'm a passionate and dedicated software developer.
+           </p>
+        <div class="content">
+          <p>I have a strong background in C++ as well in JAVA , And I thrive in creating innovative solutions to complex problems.
+            Throughout my career, I have worked on a wide range of projects, spanning from web and mobile applications to enterprise software systems. I take pride in my ability to write clean, efficient, and maintainable code that adheres to industry best practices. I enjoy collaborating with cross-functional teams, including designers, product managers, and fellow developers, to deliver high-quality software solutions.</p>
+        </div>
+        <label class="btn" for="check0">Read More</label>
       </div>
+      
+
+
+
     </section>
     <!-- services section design -->
     <section class="services" id="services">
       <h2 class="heading">Our <span>Services</span></h2>
-      <div class="services-container">
+      <!-- <div class="services-container">
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
           <h3>Software Development</h3>
@@ -70,8 +89,28 @@
             odit consectetur voluptatum illum suscipit?
           </p>
           <a href="#" class="btn"> Read More</a>
+        </div> -->
+
+
+
+        <div class="services-container">
+          <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+          <input type="checkbox" id="check">
+          <h3>Software Development</h3>
+          <p>Our software development service encompasses the entire development lifecycle, from concept to deployment and maintenance. </p>
+
+          <div class="content">
+            <p>We offer top-notch software development services tailored to meet the unique needs of businesses and individuals.
+             With our team of experienced and skilled software developers, we deliver cutting-edge solutions that drive innovation and growth.</p>
+          </div>
+          <label class="btn" for="check">Read More</label>
         </div>
-        <div class="services-box">
+
+
+
+
+        <!-- <div class="services-box">
           <i class="bx bx-laptop"></i>
           <h3>Web Development</h3>
           <p>
@@ -79,8 +118,27 @@
             odit consectetur voluptatum illum suscipit?
           </p>
           <a href="#" class="btn"> Read More</a>
+        </div> -->
+
+
+        
+          <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+          <input type="checkbox" id="check1">
+          <h3>Web Development</h3>
+          <p>We understand that every business has unique requirements and objectives. That's why our web development service is tailored to meet your specific needs. </p>
+          <div class="content">
+            <p>Whether you require a simple informational website, an e-commerce platform, or a complex web application, we have the skills and expertise to bring your vision to life.
+              we provide professional web development services that empower businesses to establish a strong online presence, engage their target audience, and achieve their digital goals.</p>
+          </div>
+          <label class="btn" for="check1">Read More</label>
         </div>
-        <div class="services-box">
+
+
+
+
+
+        <!-- <div class="services-box">
           <i class="bx bx-data"></i>
           <h3>Database Development and Management</h3>
           <p>
@@ -88,7 +146,22 @@
             odit consectetur voluptatum illum suscipit?
           </p>
           <a href="#" class="btn"> Read More</a>
+        </div> -->
+
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+        <input type="checkbox" id="check2">
+        <h3>Database Development and Management</h3>
+        <p>We understand that data is a valuable asset for any organization, and its proper management is crucial for business success.  </p>
+        <div class="content">
+          <p>Our Database Development and Management service begins with a thorough analysis of your data requirements and business processes.We work closely with you to identify the most suitable database technology and architecture that aligns with your specific needs.</p>
         </div>
+        <label class="btn" for="check2">Read More</label>
+      </div>
+
+
+
+        
       </div>
     </section>
     <!-- portfolio section design -->
@@ -184,7 +257,7 @@
             <input type="text" name="subject" placeholder="Email Subject" required>
         </div>
         <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <input type="hidden" name="redirect" value="https://kumarabhi-portfolio.onrender.com/index.html">
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
         <input type="submit" value="Send Message" class="btn">
     </form>
 </section>
